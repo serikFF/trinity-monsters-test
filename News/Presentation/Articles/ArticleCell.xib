@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="JMU-dT-pDq" customClass="ArticleCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JMU-dT-pDq" id="OX2-X9-kxj">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-S8-MKw">
+                        <rect key="frame" x="16" y="19.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gNA-S8-MKw" secondAttribute="height" multiplier="1:1" id="da3-Gf-yzm"/>
+                            <constraint firstAttribute="width" constant="100" id="wRF-XY-S4C"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Источник:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-dC-oTp">
+                        <rect key="frame" x="132" y="41" width="246" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата публикации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX4-0N-rkv">
+                        <rect key="frame" x="132" y="108.5" width="266" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz7-nm-zbe">
+                        <rect key="frame" x="132" y="16" width="266" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TaO-dC-oTp" firstAttribute="leading" secondItem="gNA-S8-MKw" secondAttribute="trailing" constant="16" id="31j-Sq-Ese"/>
+                    <constraint firstAttribute="trailing" secondItem="lz7-nm-zbe" secondAttribute="trailing" constant="16" id="5Fq-jn-gut"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TaO-dC-oTp" secondAttribute="trailing" constant="16" id="AgF-si-qmY"/>
+                    <constraint firstAttribute="trailing" secondItem="sX4-0N-rkv" secondAttribute="trailing" constant="16" id="EiL-gs-qUV"/>
+                    <constraint firstItem="gNA-S8-MKw" firstAttribute="centerY" secondItem="OX2-X9-kxj" secondAttribute="centerY" id="Fhb-H7-jM3"/>
+                    <constraint firstAttribute="bottom" secondItem="sX4-0N-rkv" secondAttribute="bottom" constant="16" id="Jf0-QJ-5Hp"/>
+                    <constraint firstItem="sX4-0N-rkv" firstAttribute="leading" secondItem="gNA-S8-MKw" secondAttribute="trailing" constant="16" id="XHZ-oQ-3ce"/>
+                    <constraint firstItem="TaO-dC-oTp" firstAttribute="top" secondItem="lz7-nm-zbe" secondAttribute="bottom" constant="8" id="ZDn-az-CKP"/>
+                    <constraint firstItem="gNA-S8-MKw" firstAttribute="leading" secondItem="OX2-X9-kxj" secondAttribute="leading" constant="16" id="gsw-O7-OXy"/>
+                    <constraint firstItem="sX4-0N-rkv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TaO-dC-oTp" secondAttribute="bottom" constant="8" id="gv7-LW-mzP"/>
+                    <constraint firstItem="lz7-nm-zbe" firstAttribute="top" secondItem="OX2-X9-kxj" secondAttribute="top" constant="16" id="m3N-w4-KJc"/>
+                    <constraint firstItem="lz7-nm-zbe" firstAttribute="leading" secondItem="gNA-S8-MKw" secondAttribute="trailing" constant="16" id="qJz-AI-D1h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="articleImageView" destination="gNA-S8-MKw" id="7hi-wR-neP"/>
+                <outlet property="publicationDateLabel" destination="sX4-0N-rkv" id="6Nz-Am-bz1"/>
+                <outlet property="sourceLabel" destination="TaO-dC-oTp" id="tuc-g1-DF7"/>
+                <outlet property="titleLabel" destination="lz7-nm-zbe" id="xGW-zb-UFh"/>
+            </connections>
+            <point key="canvasLocation" x="-897.10144927536237" y="-51.227678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
