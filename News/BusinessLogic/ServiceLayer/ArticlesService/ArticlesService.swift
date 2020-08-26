@@ -14,18 +14,18 @@ final class ArticlesService: ArticlesServiceProtocol {
     
     private let decoder: JSONDecoder
     private let apiClient: ApiClientProtocol
-    private let articleDAOTranslator: ArticleDAOTranslator
     private let articlesDAO: RealmDAO<Article, DBArticle>
 
-    init(apiClient: ApiClientProtocol = ServiceLayer.instance.apiClient) {
-        self.apiClient = apiClient
+    init(
+        apiClient: ApiClientProtocol = ServiceLayer.instance.apiClient,
+        articlesDAO: RealmDAO<Article, DBArticle>? = nil) {
         
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
-        self.decoder = decoder
         
-        articleDAOTranslator = ArticleDAOTranslator()
-        articlesDAO = RealmDAO.init(articleDAOTranslator)
+        self.decoder = decoder
+        self.apiClient = apiClient
+        self.articlesDAO = articlesDAO ?? RealmDAO.init(ArticleDAOTranslator())
     }
     
     func getArticles(

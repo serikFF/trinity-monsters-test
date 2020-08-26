@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187EC87D24F5DAFA009F0984 /* RealmDAOMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC87C24F5DAFA009F0984 /* RealmDAOMock.swift */; };
 		1889BE6E24F5A9F9008C0A59 /* RMRPullToRefreshContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889BE6824F5A9F9008C0A59 /* RMRPullToRefreshContainerView.swift */; };
 		1889BE6F24F5A9F9008C0A59 /* RMRPullToRefreshViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889BE6924F5A9F9008C0A59 /* RMRPullToRefreshViewProtocol.swift */; };
 		1889BE7024F5A9F9008C0A59 /* RMRPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889BE6A24F5A9F9008C0A59 /* RMRPullToRefresh.swift */; };
@@ -31,7 +32,7 @@
 		18A31E0724F4F75500ACC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A31E0524F4F75500ACC446 /* Main.storyboard */; };
 		18A31E0924F4F75600ACC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A31E0824F4F75600ACC446 /* Assets.xcassets */; };
 		18A31E0C24F4F75600ACC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A31E0A24F4F75600ACC446 /* LaunchScreen.storyboard */; };
-		18A31E1724F4F75700ACC446 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A31E1624F4F75700ACC446 /* NewsTests.swift */; };
+		18A31E1724F4F75700ACC446 /* ArticlesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A31E1624F4F75700ACC446 /* ArticlesServiceTests.swift */; };
 		18A31E3024F507AA00ACC446 /* DBArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A31E2F24F507AA00ACC446 /* DBArticle.swift */; };
 		18A31E3224F507B200ACC446 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A31E3124F507B200ACC446 /* Article.swift */; };
 		18A31E3424F507BD00ACC446 /* ArticleDAOTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A31E3324F507BD00ACC446 /* ArticleDAOTranslator.swift */; };
@@ -60,16 +61,10 @@
 			remoteGlobalIDString = 18A31DFB24F4F75500ACC446;
 			remoteInfo = News;
 		};
-		18A31E1E24F4F75700ACC446 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18A31DF424F4F75500ACC446 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18A31DFB24F4F75500ACC446;
-			remoteInfo = News;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187EC87C24F5DAFA009F0984 /* RealmDAOMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDAOMock.swift; sourceTree = "<group>"; };
 		1889BE6824F5A9F9008C0A59 /* RMRPullToRefreshContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMRPullToRefreshContainerView.swift; sourceTree = "<group>"; };
 		1889BE6924F5A9F9008C0A59 /* RMRPullToRefreshViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMRPullToRefreshViewProtocol.swift; sourceTree = "<group>"; };
 		1889BE6A24F5A9F9008C0A59 /* RMRPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMRPullToRefresh.swift; sourceTree = "<group>"; };
@@ -96,9 +91,8 @@
 		18A31E0824F4F75600ACC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A31E0B24F4F75600ACC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A31E1224F4F75700ACC446 /* NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18A31E1624F4F75700ACC446 /* NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTests.swift; sourceTree = "<group>"; };
+		18A31E1624F4F75700ACC446 /* ArticlesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesServiceTests.swift; sourceTree = "<group>"; };
 		18A31E1824F4F75700ACC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18A31E1D24F4F75700ACC446 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A31E2F24F507AA00ACC446 /* DBArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBArticle.swift; sourceTree = "<group>"; };
 		18A31E3124F507B200ACC446 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		18A31E3324F507BD00ACC446 /* ArticleDAOTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDAOTranslator.swift; sourceTree = "<group>"; };
@@ -139,13 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D182E1BB2A338C5EC1A7482D /* Pods_NewsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A31E1A24F4F75700ACC446 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +287,6 @@
 			children = (
 				18A31DFC24F4F75500ACC446 /* News.app */,
 				18A31E1224F4F75700ACC446 /* NewsTests.xctest */,
-				18A31E1D24F4F75700ACC446 /* NewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,7 +305,8 @@
 		18A31E1524F4F75700ACC446 /* NewsTests */ = {
 			isa = PBXGroup;
 			children = (
-				18A31E1624F4F75700ACC446 /* NewsTests.swift */,
+				18A31E1624F4F75700ACC446 /* ArticlesServiceTests.swift */,
+				187EC87C24F5DAFA009F0984 /* RealmDAOMock.swift */,
 				18A31E1824F4F75700ACC446 /* Info.plist */,
 			);
 			path = NewsTests;
@@ -409,6 +396,7 @@
 				18A31E0E24F4F75700ACC446 /* Sources */,
 				18A31E0F24F4F75700ACC446 /* Frameworks */,
 				18A31E1024F4F75700ACC446 /* Resources */,
+				932AD01F7BCC6938D5A1E08C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,24 +407,6 @@
 			productName = NewsTests;
 			productReference = 18A31E1224F4F75700ACC446 /* NewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		18A31E1C24F4F75700ACC446 /* NewsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18A31E2C24F4F75700ACC446 /* Build configuration list for PBXNativeTarget "NewsUITests" */;
-			buildPhases = (
-				18A31E1924F4F75700ACC446 /* Sources */,
-				18A31E1A24F4F75700ACC446 /* Frameworks */,
-				18A31E1B24F4F75700ACC446 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18A31E1F24F4F75700ACC446 /* PBXTargetDependency */,
-			);
-			name = NewsUITests;
-			productName = NewsUITests;
-			productReference = 18A31E1D24F4F75700ACC446 /* NewsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -451,10 +421,6 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					18A31E1124F4F75700ACC446 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 18A31DFB24F4F75500ACC446;
-					};
-					18A31E1C24F4F75700ACC446 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 18A31DFB24F4F75500ACC446;
 					};
@@ -475,7 +441,6 @@
 			targets = (
 				18A31DFB24F4F75500ACC446 /* News */,
 				18A31E1124F4F75700ACC446 /* NewsTests */,
-				18A31E1C24F4F75700ACC446 /* NewsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -495,13 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		18A31E1024F4F75700ACC446 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A31E1B24F4F75700ACC446 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,6 +511,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		932AD01F7BCC6938D5A1E08C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsTests/Pods-NewsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsTests/Pods-NewsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsTests/Pods-NewsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE4F083C8B8869122192E8BD /* [CP] Embed Pods Frameworks */ = {
@@ -620,14 +595,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A31E1724F4F75700ACC446 /* NewsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A31E1924F4F75700ACC446 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				187EC87D24F5DAFA009F0984 /* RealmDAOMock.swift in Sources */,
+				18A31E1724F4F75700ACC446 /* ArticlesServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,11 +607,6 @@
 			isa = PBXTargetDependency;
 			target = 18A31DFB24F4F75500ACC446 /* News */;
 			targetProxy = 18A31E1324F4F75700ACC446 /* PBXContainerItemProxy */;
-		};
-		18A31E1F24F4F75700ACC446 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18A31DFB24F4F75500ACC446 /* News */;
-			targetProxy = 18A31E1E24F4F75700ACC446 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -868,44 +832,6 @@
 			};
 			name = Release;
 		};
-		18A31E2D24F4F75700ACC446 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rosliakov.NewsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = News;
-			};
-			name = Debug;
-		};
-		18A31E2E24F4F75700ACC446 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NewsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rosliakov.NewsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = News;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -932,15 +858,6 @@
 			buildConfigurations = (
 				18A31E2A24F4F75700ACC446 /* Debug */,
 				18A31E2B24F4F75700ACC446 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A31E2C24F4F75700ACC446 /* Build configuration list for PBXNativeTarget "NewsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18A31E2D24F4F75700ACC446 /* Debug */,
-				18A31E2E24F4F75700ACC446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

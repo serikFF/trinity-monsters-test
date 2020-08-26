@@ -14,5 +14,6 @@ target 'News' do
   target 'NewsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'DAO/Realm'
   end
 end
